@@ -1,0 +1,25 @@
+.sf__component{
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius:15px;
+    box-shadow: 1px 1px 10px #e3e3e3;
+    margin: 15px;
+}
+.sf__container{
+    display: grid;
+    place-items: center;
+    padding: 5px;
+}
+.sf__mui__icon{
+    height: 200px;
+    width: 200px;
+}
+.sf__header,.sf__disc{
+    margin-top: 5px;
+}
+.sf__disc{
+    padding:5px;
+    opacity:0.6;
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+.landing__page{
+    // background
+    scroll-behavior: smooth;
+}
+
+// banner
+.landing__page--banner{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	// height: 100vh;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+.banner__container{
+    display: flex;
+    width:100vw;
+    justify-content: space-around;   
+}
+.banner__left{
+    display: grid;
+    place-items: center;
+    h1{
+        font-size:48px;
+    }
+}
+.banner__right{
+    img{
+        height: 500px;
+        width: 500px;
+        object-fit: contain;
+        transform: translateY(50px);
+    }
+}
+.banner--signup-btn{
+    display: inline-block;
+    padding: 14px 32px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #0A2540;;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+// about
+.landing__page--about{
+    margin-top: 100px;
+}
+.about__title{
+    display: grid;
+    place-items: center;
+}
+.about__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        height: 350px;
+        width: 350px;
+        object-fit: contain;
+    }
+}
+.about__container--left{
+    max-width: 600px;
+    text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Inter', sans-serif;
+}
+
+// dev sec
+.dev__sec{
+    margin-top: 150px;;  
+}
+.div__container{
+    background: #F6F9FC;
+    display: flex;
+    justify-content: space-around;
+    img{
+        height: 350px;
+        width: 350px;
+        object-fit: contain;
+    }
+}
+.dev__container--left{
+    max-width: 600px;
+    text-align: justify;
+  text-justify: inter-word;
+  padding-top: 150px;
+}
+
+// testimonials
+
+.LandingPage__testimonials{
+    display: flex;
+    overflow: scroll;
+    width: 100vw;
+}
+.LandingPage__testimonials::-webkit-scrollbar{
+    display: none;
+}
+// special__feature--container
+
+.special__feature--container{
+    margin-top: 150px;
+}
+
+
+
+// footer
+
+.LandingPage__footer{
+    margin-top: 150px;
+}
+
+.testimonials__container{
+    margin-top: 150px;
+}

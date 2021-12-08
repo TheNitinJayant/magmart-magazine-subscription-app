@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.nav-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1.25rem 1rem;
+}
+
+.brand-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 1rem;
+}
+
+.brand-name{
+    text-shadow: 2px 2px grey;
+    font-family: 'Pacifico', cursive;;
+}
+
+.theme-switch-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links-link{
+    text-decoration: none;
+    text-underline: none;
+    color: inherit;
+}

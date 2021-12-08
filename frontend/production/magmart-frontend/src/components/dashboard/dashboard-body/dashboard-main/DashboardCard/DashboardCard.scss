@@ -1,0 +1,29 @@
+.dashboard__card{
+    background: #ffff;
+    width: 350px;
+    border-radius: 10px;
+    border:0;
+    box-shadow:0 1px 4px 0 rgba(0 0 0 /20%);
+    margin: 5px;
+}
+.dashboard__container{
+    display: flex;
+}
+.dashboard__container__left{
+    background:#ff9800;
+    padding: 15px;
+    margin: 0 20px 20px 20px;
+    border-radius: 10px;
+    transform: translateY(-30px);
+}
+.dashboard__container__right{
+    // background:yellow;
+    text-align: center;
+    margin-top: 20px;
+    h3{
+        font-size: 1.825em;
+    }
+    h2{
+        opacity: 0.6;
+    }
+}

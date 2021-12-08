@@ -1,0 +1,31 @@
+
+.dashboard__user__cart__item{
+    background: #f7f7f7f7;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px;
+    max-width: 80%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+
+}
+.item__container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.item__container__left{
+    img{
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+    }
+}
+.item__container__center{
+    display: flex;
+    max-width: 220px;
+    justify-content:space-around;
+    overflow: hidden;
+}

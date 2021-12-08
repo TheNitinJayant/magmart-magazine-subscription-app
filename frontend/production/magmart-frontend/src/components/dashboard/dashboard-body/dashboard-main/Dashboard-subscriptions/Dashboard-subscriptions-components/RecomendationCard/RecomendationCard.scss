@@ -1,0 +1,44 @@
+.RecomendationCard__container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 200px;
+    margin: 5px;
+    
+}
+.RecomendationCard__container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.RecomendationCard{  
+    img{
+        // height: 300px;
+        // width: 100%;
+        // object-fit: contain;
+        width: 200px; 
+        object-fit: contain;
+        max-height: 300px;
+        margin-right: 10px;
+        transition: transform 450ms; 
+    }
+
+}
+.RecomendationCard__details{
+    padding: 2px 16px;
+}
+.RecomendationCard__subscribe{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:15px;
+}
+.Sub__btn{
+    margin: 15px;
+    display: grid;
+    place-items: center;
+}

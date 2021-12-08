@@ -1,0 +1,47 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.5'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.capstone'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-jersey'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly 'com.h2database:h2'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.5.5'
+	//sql server jdbc
+	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
+
+//	implementation 'com.microsoft.sqlserver:mssql-jdbc:9.4.0.jre16'
+
+//	mysql jdbc connector
+//	implementation 'mysql:mysql-connector-java:5.1.6'
+//	implementation 'mysql:mysql-connector-java:6.0.3'
+	implementation 'mysql:mysql-connector-java:8.0.13'
+	//hibernate
+	implementation 'org.hibernate:hibernate-gradle-plugin:5.5.7.Final'
+	//JWT authentication
+	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2'
+	implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.4'
+//	Spring Security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	//lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+}
+
+test {
+	useJUnitPlatform()
+}

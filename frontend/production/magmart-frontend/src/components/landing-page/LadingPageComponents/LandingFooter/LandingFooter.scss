@@ -1,0 +1,17 @@
+.landing__footer{
+    color: #ffff;
+    background:#0A2540;
+    padding:25px;
+}
+.landing__footer--container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.landing__footer--left{
+    display: flex;
+}
+.footer--address{
+    display: flex;
+    align-items: center;
+}
